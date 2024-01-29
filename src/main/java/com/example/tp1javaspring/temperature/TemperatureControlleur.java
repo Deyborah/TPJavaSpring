@@ -9,7 +9,7 @@ public class TemperatureControlleur extends Temperature {
     public TemperatureControlleur(TemperatureService temperatureService){
         this.temperatureService= temperatureService;
     }
-    @GetMapping("/")
+    @GetMapping("/temp")
     public double gettemperature(double temperature) {
         this.Celsius = Celsius;
         this.Fahrenheit = Fahrenheit;
@@ -17,7 +17,7 @@ public class TemperatureControlleur extends Temperature {
         return temperature;
     };
 
-    @PostMapping("/")
+    @PostMapping("/convert")
         public double TemperatureConverti(){
 
     };
